@@ -1,6 +1,6 @@
 ## Author: Alexander Ventura
 ## Date: February 17th, 2013
-## Description: Simple Gaussian Elimination Algorithm 
+## Description: Simple Gaussian Elimination Algorithm with Partial Pivoting
 ## Enjoy!!
 
 def row_swap(m, r1, ipk):
