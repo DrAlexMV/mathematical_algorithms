@@ -1,3 +1,8 @@
+## Author: Alexander Ventura
+## Date: February 17th, 2013
+## Description: Simple Gaussian Elimination Algorithm 
+## Enjoy!!
+
 def row_swap(m, r1, ipk):
     for i in xrange(r1, len(m[0])):
         m[r1][i], m[ipk][i] = m[ipk][i], m[r1][i]
