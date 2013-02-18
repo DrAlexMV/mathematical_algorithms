@@ -2,6 +2,7 @@ def row_swap(m, r1, ipk):
     for i in xrange(r1, len(m[0])):
         m[r1][i], m[ipk][i] = m[ipk][i], m[r1][i]
 
+## Definition performs first part of loop on the matrix, storing multipliers and updating ip
 def gauss_pp_m(m):
     ip = len(m) * [0]
     for k in xrange(0,len(m)):
@@ -15,6 +16,7 @@ def gauss_pp_m(m):
             m[i][k] = m[i][k]/float(m[k][k])
             for j in xrange(k + 1, len(m)):
                 m[i][j] = m[i][j] - m[i][k]*m[k][j]
+    ## Returns ip to be used in the second part of the algorithm
     return ip
 
 def gauss_pp_b(m, b, ip):
